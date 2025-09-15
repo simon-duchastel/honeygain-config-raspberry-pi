@@ -36,4 +36,4 @@ fi
 echo "Starting HoneyGain container with device name: $DEVICE_NAME"
 echo "Account: $ACCOUNT_EMAIL"
 
-docker run honeygain/honeygain -tou-accept -email "$ACCOUNT_EMAIL" -pass "$ACCOUNT_PASSWORD" -device "$DEVICE_NAME"
+docker run -d honeygain/honeygain -tou-accept -email "$ACCOUNT_EMAIL" -pass "$ACCOUNT_PASSWORD" -device "$DEVICE_NAME"
